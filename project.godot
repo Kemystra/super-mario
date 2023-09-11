@@ -10,6 +10,11 @@ config_version=5
 
 [application]
 
-config/name="Mario"
+config/name="Super Mario"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[rendering]
+
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
