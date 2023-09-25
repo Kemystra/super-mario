@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://duroahcncmuoq"]
+
+[ext_resource type="Texture2D" uid="uid://drksonu10sjj1" path="res://mario/mario-png.png" id="1_rhk7h"]
+
+[node name="Mario" type="Sprite2D"]
+position = Vector2(3, 0)
+texture = ExtResource("1_rhk7h")
+metadata/_edit_vertical_guides_ = []
