@@ -1,8 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://duroahcncmuoq"]
+[gd_scene load_steps=3 format=3 uid="uid://duroahcncmuoq"]
 
 [ext_resource type="Texture2D" uid="uid://drksonu10sjj1" path="res://mario/mario-png.png" id="1_rhk7h"]
 
-[node name="Mario" type="Sprite2D"]
-position = Vector2(3, 0)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qxvcn"]
+size = Vector2(12, 16)
+
+[node name="Mario" type="CharacterBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_rhk7h")
-metadata/_edit_vertical_guides_ = []
+
+[node name="Collider" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_qxvcn")
