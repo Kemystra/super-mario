@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://baor1icpe6iwa"]
+[gd_scene load_steps=5 format=3 uid="uid://baor1icpe6iwa"]
 
 [ext_resource type="Texture2D" uid="uid://bp0e7xwo41d1r" path="res://main/tile.png" id="1_m4yvm"]
+[ext_resource type="PackedScene" uid="uid://duroahcncmuoq" path="res://mario/mario.tscn" id="2_xf3ch"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d7h05"]
 texture = ExtResource("1_m4yvm")
@@ -16,3 +17,6 @@ tile_set = SubResource("TileSet_kkopm")
 format = 2
 layer_0/name = "Floor"
 layer_0/tile_data = PackedInt32Array(524288, 0, 0, 589824, 0, 0, 524289, 0, 0, 589825, 0, 0, 524290, 0, 0, 589826, 0, 0, 524291, 0, 0, 589827, 0, 0, 524292, 0, 0, 589828, 0, 0, 524293, 0, 0, 589829, 0, 0, 524294, 0, 0, 589830, 0, 0, 524295, 0, 0, 589831, 0, 0, 524296, 0, 0, 589832, 0, 0, 524297, 0, 0, 589833, 0, 0, 524298, 0, 0, 589834, 0, 0, 524299, 0, 0, 589835, 0, 0, 524300, 0, 0, 589836, 0, 0, 524301, 0, 0, 589837, 0, 0, 524302, 0, 0, 589838, 0, 0)
+
+[node name="Mario" parent="." instance=ExtResource("2_xf3ch")]
+position = Vector2(57, 119)
