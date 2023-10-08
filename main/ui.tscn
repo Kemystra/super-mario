@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ckl0r4t3chud6"]
+
+[node name="ui" type="CanvasLayer"]
+
+[node name="die" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "FAIL
+You died!"
