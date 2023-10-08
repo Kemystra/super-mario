@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+signal mario_die
 
 @export var speed = 300.0
 @export var jump_velocity = -400.0
@@ -26,3 +27,14 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, speed)
 
 	move_and_slide()
+
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		if collision.get_collider().is_in_group("enemy"):
+			die()
+
+
+
+func die():
+	emit_signal("mario_die")
+	queue_free()

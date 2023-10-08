@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://duroahcncmuoq"]
+[gd_scene load_steps=4 format=3 uid="uid://dtf33obedqc1g"]
 
 [ext_resource type="Script" path="res://mario/mario.gd" id="1_jy8lk"]
 [ext_resource type="Texture2D" uid="uid://drksonu10sjj1" path="res://mario/mario-png.png" id="1_rhk7h"]
@@ -8,6 +8,7 @@ size = Vector2(12, 16)
 
 [node name="Mario" type="CharacterBody2D"]
 script = ExtResource("1_jy8lk")
+speed = 150.0
 
 [node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_rhk7h")
